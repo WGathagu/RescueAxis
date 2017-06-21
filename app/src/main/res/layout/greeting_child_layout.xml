@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Contact Details: "
+        android:textColor="#41321b"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="#41321b"
+        android:textSize="20sp"
+        android:id="@+id/greetchild_layout"
+        android:layout_marginLeft="50dp" />
+
+    <!--<Button
+        android:id="@+id/openpopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Them" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:background="#6ee1cda9"
+                android:text="CALL"
+                android:id="@+id/btn_callin"
+                android:drawableTop="@drawable/ic_action_phone_start"
+                android:layout_weight="0.1"
+                android:paddingBottom="5dp" />
+            <Button
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:background="#6eafd7c0"
+                android:text="SMS"
+                android:id="@+id/btn_textin"
+                android:drawableTop="@drawable/ic_action_mail"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.1"
+                android:paddingBottom="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
